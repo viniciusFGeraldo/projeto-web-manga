@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Roboto&display=swap');
+
+
+*{/*essa parte faz o resete do padrão da página*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul {/*aqui tira os ponto que fica antes dos itens*/
+    list-style: none;
+}
+
+body{/*aqui coloquei fundo preto*/
+    background-color: #000;
+}
+
+header{
+    /* background-color: orange; */
+    width: 100%;/*aqui determinei o tamanho do fundo do cabeçalho*/
+    height: 7%;
+    display:flex;
+    flex-direction: row;/*aqui coloquei um display flex e para garantir que ia ficar em linha coloquei um row*/
+    justify-content: space-between;/*aqui eu separei eles para ficar um a esquerda outro no meio e outro a direita*/
+}
+
+.logo{
+    width: 200px;
+    height: 65px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.conteudo-cabecalho{
+    /* background-color: chartreuse; */
+    width: 650px;
+    height: 65px;
+    
+}
+
+.titulo-cabecalho{
+    display:flex;
+    justify-content: center;/*centralizei o elemento*/
+    color: #0BA0B2;
+}
+
+.texto-cabecalho{
+    font-size: 12px;
+    padding: 0;
+    line-height: 25px;/*para espaçamento entre os elementos*/
+    display: flex;
+    justify-content: center;/*centralizei o elemento*/
+    color: #0BA0B2;
+}
+
+.botao-cabecalho{
+  background-color: #000 ;
+  color: #0BA0B2;
+  width: 200px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 20px;
+  border: none; /*aqui ele tirou uma bordinha branca que estava aparecendo*/
+
+}
+
+.botao-cabecalho:hover{
+    background-color: #1a1a1a;
+    color: #16B8CC;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.conteiner-carrossel{
+    /* background-color: orange;  */
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.imagem-carrossel{
+    height: 320px;
+}
+
+.barra-navegacao{
+    background-color: red;
+    width: 100%;
+    height: 25px;
+}
+
+.item-geral{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item-navegacao{
+    padding: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.conteiner-galeria{
+    /* background-color: green;  */
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.item-galeria{
+    width: 200px;
+    height: 350px;
+    margin-bottom: 55px;
+    text-decoration: none;
+}
+
+.item-galeria img{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo{
+    color: #0BA0B2;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 18px;
+}
+
+.coluna-lateral{
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 414px;
+    width: 30%;
+    height: 199.2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: space-between;
+}
+
+.conteiner-mais-lidos{
+    background-color: #000;
+    min-height: 75vh;
+    width: 99%;
+}
+
+.titulo-lateral{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    padding-top: 10px;
+    color: #16B8CC;
+}
+
+.numeracao{
+    padding-left: 40px;/*posicionamento das informações puchando eles para direita*/
+    padding-top: 20px;/*posicionamento das informações puchando elas para baixo*/
+    color: white;
+    font-size: 20px; /*tamanho da fonte*/
+    line-height: 30px;/*espaçamento das linhas*/
+}
+
+
+.conteiner-melhores-site{
+    background-color: orange;
+    min-height: 75vh;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.link-site{
+    border: 3px solid white;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #16B8CC;
+
+}
+
+.conteiner-video{
+    background-color: purple;
+    width: 100%;
+    min-height: 28vh;
+    
+}
+
+.video{
+    width: 389px;
+    height: 296px;
+} 
+
+.conteiner-rodape{
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+}
