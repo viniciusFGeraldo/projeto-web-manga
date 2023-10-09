@@ -75,17 +75,14 @@ header{
 }
 
 .conteiner-carrossel{
-    /* background-color: orange;  */
+    background-color: orange;
     width: 100%;
-    height: 320px;
-    display: flex;
-    justify-content: space-around;
+    height: 400px;
+    
 
 }
 
-.imagem-carrossel{
-    height: 320px;
-}
+
 
 .barra-navegacao{
     background-color: red;
@@ -107,12 +104,12 @@ header{
 }
 
 .conteiner-galeria{
-    /* background-color: green;  */
+    background-color: #000;  
     width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+    gap: 2px;
 }
 
 .item-galeria{
@@ -139,19 +136,21 @@ header{
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 414px;
+    margin-top: 494px;
     width: 30%;
-    height: 199.2vh;
+    height: 133.1vh;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     align-content: space-between;
+    padding-left: 1.5px;
+    gap: 1.2px;
 }
 
 .conteiner-mais-lidos{
     background-color: #000;
-    min-height: 75vh;
-    width: 99%;
+    min-height: 50vh;
+    width: 100%;
 }
 
 .titulo-lateral{
@@ -172,8 +171,8 @@ header{
 
 
 .conteiner-melhores-site{
-    background-color: orange;
-    min-height: 75vh;
+    background-color:  #000;
+    min-height: 50vh;
     width: 100%;
 }
 
@@ -197,9 +196,9 @@ ul{
 }
 
 .conteiner-video{
-    background-color: purple;
+    background-color: #000;
     width: 100%;
-    min-height: 28vh;
+    min-height: 32vh;
     
 }
 
@@ -211,5 +210,6 @@ ul{
 .conteiner-rodape{
     background-color: aquamarine;
     width: 100%;
+    height: 70px;
     display: flex;
 }
