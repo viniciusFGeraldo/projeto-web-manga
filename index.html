@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recomendação de Manga</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/stylepagemain.css">
+    <link rel="stylesheet" href="./css/stylecarrossel.css">
 </head>
 <body>
     <main>
@@ -12,24 +13,43 @@
             <a href="./index.html"><img class="logo" src="./assents/logo.png" alt="logo do site"></a>
             <section class="conteudo-cabecalho">
                 <h1 class="titulo-cabecalho">Recomenda manga</h1>
-                <p class="texto-cabecalho">Fornecemos recomendação de mangas, a maneira mais fácil e simples de ficar sempre atualizado com os melhores mangas </p>
+                <p class="texto-cabecalho">Fornecemos recomendação de mangas, a maneira mais fácil e simples de ficar sempre atualizado com os melhores mangas.</p>
             </section>
-            <button class="botao-cabecalho">Recomende aqui</button>
+            <a href="./recomendacao.html" class="botao-cabecalho">Recomende aqui</a>
         </header>
-        <section class="conteiner-carrossel">   
-            <div>
-
+        <section class="carrossel">
+            <div class="conteiner-carrossel"><!--https://www.youtube.com/watch?v=sk7mgXO-FeQ -->
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
+                <input type="radio" name="btn-radio" id="radio5">
+    
+                <div class="imagem" id="primeira"><img src="./assentsCarrossel/carrossel1.png" alt="carrossel1"></div>
+                <div class="imagem"><img src="./assentsCarrossel/carrossel2.jpg" alt="carrossel2" ></div>
+                <div class="imagem"><img src="./assentsCarrossel/carrossel3.jpg" alt="carrossel3" ></div>
+                <div class="imagem"><img src="./assentsCarrossel/carrossel4.jpg" alt="carrossel4" ></div>
+                <div class="imagem"><img src="./assentsCarrossel/carrossel5.jpg" alt="carrossel5" ></div>
+                
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+    
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn">Solo Leveling</label>
+                    <label for="radio2" class="manual-btn">against the Gods</label>
+                    <label for="radio3" class="manual-btn">I am the Sorcerer King</label>
+                    <label for="radio4" class="manual-btn">Nano Machine</label>
+                    <label for="radio5" class="manual-btn">Second Life Ranker</label>
+                </div>
+    
             </div>
-        </section>
-        <nav class="barra-navegacao"><!--melhores mangas com apresentação linkada com a section acima-->
-            <ul class="item-geral">
-                <li class="item-navegacao">Solo Leveling</li>
-                <li class="item-navegacao">Second Life Ranker</li>
-                <li class="item-navegacao">Necromancer-King of the Scourge</li>
-                <li class="item-navegacao">Nano Machine</li>
-                <li class="item-navegacao">I am the Sorcerer King</li>
-            </ul>
-        </nav>
+        </section>   
+       
         <article class="conteiner-galeria">
             
             <a href="https://www.google.com.br/?hl=pt-BR" class="item-galeria"><img class="imagem-conteudo" src="./assents/onepiece1.webp" alt="one_piece"><h1 class="titulo">One Piece</h1></a>
@@ -80,18 +100,25 @@
                 </ul>
             </aside>
             <aside class="conteiner-video">
-                <video src="./assentsVideo/video-principal2.mp4" alt="video trailer geral" class="video"></video><!--video geral de anime,não em especifico.para mais informação de como fazer acesse: https://maujor.com/tutorial/inserindo-videos-com-uso-da-html5.php-->
+                <iframe src="https://www.youtube.com/embed/zQGQLEE1nQs?si=k3Dm0Lupd5dnOAdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
             </aside>
 
         </div>
         <footer class="conteiner-rodape">
-            <img src="" alt="imagem do discord" a hef="">
-            <img src="" alt="imagem do email" a hef="">
-            <p>Manga Online. Ler mangás online grátis em português PT-BR, Leitor de mangá online, a maneira mais fácil e simples de ficar sempre atualizado com os melhores mangas gratuitos.</p>
-            <button>Topo</button>
+            <div>
+                <a href="https://discord.com/"><img src="./assents/discord.png" alt="imagem do discord"></a>
+                <a href="https://outlook.live.com/mail/about/index_pt.html"><img src="./assents/email.png" alt="imagem do email"></a>
+            </div>
+            <p class="texto-rodape" >Fornecemos recomendação de mangas,<br> a maneira mais fácil e simples de ficar sempre atualizado com os melhores mangas.</p>
+            <button onclick="topo()">
+                <img src="./assents/seta.png" alt="seta para cima">
+            </button>
         </footer>
     </main>
 
+    <script src="carrossel.js"></script>
     
 </body>
 </html>
+
+

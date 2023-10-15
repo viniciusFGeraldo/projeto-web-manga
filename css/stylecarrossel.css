@@ -1,0 +1,115 @@
+*{/*essa parte faz o resete do padrão da página*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul {/*aqui tira os ponto que fica antes dos itens*/
+    list-style: none;
+}
+
+.carrossel{
+    background-color: aqua;
+    margin: 0 auto;
+    width: 100vw;
+    height: 25em;
+    padding: 0;
+    overflow: hidden;
+}
+
+.conteiner-carrossel{
+    width: 500vw;
+    display: flex;
+}
+
+.conteiner-carrossel input,.conteiner-carrossel .nav-auto {
+    display: none;
+}
+
+.imagem{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.imagem img{
+    width: 100%;
+    height: 25em;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 32%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+.manual-btn{    
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15s;
+    display: inline-block;
+    padding: 4px 20px;
+    position: relative;
+
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 90%,
+        #16B8CC 90%,
+        #16B8CC 100%
+     );
+     background-repeat: no-repeat;
+     background-size: 0% 100%;
+     background-position-x: right;
+     transition: background-size 300ms;
+}
+
+.manual-btn:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4, #radio5:checked ~ .nav-auto .auto-btn5{
+    background-color: #16B8CC;
+}          /*essa linha significa que quando radio1 tiver marcado quero que aconteça algo com as classe marcadas*/
+
+#radio1:checked ~ #primeira{
+    margin-left: 0%;
+}
+#radio2:checked ~ #primeira{
+    margin-left: -25%;
+}
+#radio3:checked ~ #primeira{
+    margin-left: -50%;
+}
+#radio4:checked ~ #primeira{
+    margin-left: -75%;
+}
+#radio5:checked ~ #primeira{
+    margin-left: -100%;
+}
+
+.item1:checked ~ #primeira{
+    margin-left: 0%;
+}
