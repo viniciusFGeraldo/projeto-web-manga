@@ -1,0 +1,49 @@
+.frase-formulario{
+    color: white;/*cor da letra*/
+    text-align: center;/*centralizou o texto*/
+    margin: 40px 0 20px 0;/*defini espaçamento,a sequencia é top,direita,embaixo e esquerda*/
+}
+
+label,.checkbox{
+    position: absolute;/*definiu posição dos nomes*/
+    margin: 10px 0 0 30px;/*defini espaçamento,a sequencia é top,direita,embaixo e esquerda*/
+    text-align: center;/*no quadradinho dos nomes esta centralizado*/
+    padding: 0 4px;/*define a espaçamento estro do quadradinho do nome*/
+    color: #16B8CC;/*cor do nome*/
+    background-color: #0d1019;/*cor do quadradinho*/
+    transition: all 0.2s ease;/*efeito vertical quando carrega a pagina */
+}
+#nome{
+    margin-top: 20px;/*espaçamento de cima*/
+    font-size: 13px;/*tamanho da letra*/
+}
+input,textarea{
+    padding: 15px;/*tamanho da caixa*/
+    margin: 20px 0 5px 20px;/*defini espaçamento,a sequencia é top,direita,embaixo e esquerda*/
+    background-color: transparent;/*fundo transparente*/
+    border: 2px solid #16B8CC;/*definiu a borda*/
+    border-radius: 5px;/*deixa o canto aredondado*/
+    width: 90%;/*a langura ficou grande por causa do display:grid*/
+    color: #eee;/*cor depois de selecionado*/
+    font-size: 12px;/*tamanho da letra que vai preencher*/
+    transition: all 5s ease;/*efeito horizontal quando carrega a pagina */ 
+}
+.conteiner-interno{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);/*dividiu em 2 coluna*/ 
+}
+
+#sinopse,#comente{
+    padding: 50px;/*tamanho da barra*/
+}
+#imagem{
+    padding: 80px;/*tamanho da barra*/
+}
+
+.enviar,.limpar{
+    cursor: pointer;/*muda o cursor*/
+    font-size:larger;/*outra forma de definir tamanho da letra*/
+}
+.enviar:hover,.limpar:hover{
+    color: #16B8CC;/*muda cor da letra quando cursor esta encima*/
+}

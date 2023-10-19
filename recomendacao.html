@@ -3,69 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recomendação - Recomendação de Manga</title>
+    <title>Recomendação - Recomenda Manga</title>
+    <link rel="stylesheet" href="./css/stylepagemain.css">
+    <link rel="stylesheet" href="./css/responsivopagemain.css">
+    <link rel="stylesheet" href="./css/styleformulario.css">
 </head>
 <body>
     <main>
         <header><!--cabeçalho com navegação entre paginas-->
-            <img src="" alt="logo do site">
-            <h1>Recomendação de Manga</h1>
-            <p>Conseguir recomendação de mangas, a maneira mais fácil e simples de ficar sempre atualizado com os melhores mangas gratuitos</p>
-            <button>Recomende um manga aqui</button>
+            <nav>
+                <a href="./index.html" class="logo"><img class="logo" src="./assents/logo.png" alt="logo do site"></a>
+                <a href="./recomendacao.html" class="botao-cabecalho">Recomende aqui</a>
+            </nav>
         </header>
-        <section>
-	
-            <form action="cadastro.php" autocomplete="on" method="get">
+        <section class="conteiner-formulario">
+            <p class="frase-formulario"><strong>Recomende seu manga</strong> preenchendo as informações abaixo:</p>
+            <form action="cadastro.php" autocomplete="on" method="get" class="conteiner-interno">
                 <div>
-                    <label for="nome">nome completo</label>
+                    <label for="nome">Seu nome:</label>
                     <input type="text" name="nome" id="nome" required>
                 </div>
                 <div>
-                    <label for="email">e-mail</label>
+                    <label for="email">e-mail:</label>
                     <input type="text" name="email" id="email" required>
                 </div>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 <div>
-                    <label for="idade">idade</label>
-                    <input type="number" name="idade" id="idade" required placeholder="sua idade">
+                    <label for="titulo">Titulo do manga:</label>
+                    <input type="text" name="titulo" id="titulo" required>
                 </div>
                 <div>
-                    <label for="dia">dia</label>
-                    <input type="date" name="dia" id="dia" required>
+                    <label for="categoria">Categorias do manga:</label>
+                    <input type="text" name="categoria" id="categoria" required>
                 </div>
                 <div>
-                    <label for="mes">mês</label>
-                    <input type="month" name="mes" id="mes" required>
+                    <label for="status">Status atual:</label>
+                    <input type="text" name="status" id="status" required placeholder="Hiato/Em andamento/Concluido/Cancelado">
                 </div>
                 <div>
-                    <label for="comente">deixe seu comentário</label>
+                    <label for="quantidadeCapitulos">Quant.Capitulos</label>
+                    <input type="number" name="Capitulos" id="Capitulos" required placeholder="quantos capitulos +- tem">
+                </div>
+                <div>
+                    <label for="sinopse">Sinopse:</label>
+                    <textarea name="sinopse" id="sinopse" required placehold="comente"></textarea>
+                </div>
+                <div>
+                    <label for="comente">Deixe seu comentário:</label>
                     <textarea name="comente" id="comente" required placehold="comente"></textarea>
                 </div>
                 <div>
-                    <label for="senha">senha</label>
-                    <input type="password" name="senha" id="senha" minlength="5" maxlength="15">
+                    <label for="imagem">Imagem de capa:</label>
+                    <input type="image" name="imagem" id="imagem" required>
                 </div>
-        
-                <div><input type="submit" valeu="enviar"></div>
-        
                 <div>
-                    <input type="reset" value="limpar">
+                    <input type="submit" valeu="enviar" class="enviar">
+                    <input type="reset" value="limpar" class="limpar">
                 </div>
+
             </form>
         
         </section>
-
+        <footer class="conteiner-rodape">
+            <div class="icones">
+                <a href="https://discord.com/"><img src="./assents/discord.png" alt="imagem do discord"></a>
+                <a href="https://outlook.live.com/mail/about/index_pt.html"><img src="./assents/email.png" alt="imagem do email"></a>
+            </div>
+            <p class="texto-rodape" >Fornecemos recomendação de mangas,<br> a maneira mais fácil e simples de ficar sempre atualizado com os melhores mangas.</p>
+            <button onclick="topo()">
+                <img src="./assents/seta.png" alt="seta para cima">
+            </button>
+        </footer>
     </main>
 </body>
 </html>

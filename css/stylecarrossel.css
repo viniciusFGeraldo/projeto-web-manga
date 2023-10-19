@@ -10,10 +10,8 @@ ul {/*aqui tira os ponto que fica antes dos itens*/
 }
 
 .carrossel{
-    background-color: aqua;
     margin: 0 auto;
     width: 100vw;
-    height: 25em;
     padding: 0;
     overflow: hidden;
 }
@@ -21,8 +19,12 @@ ul {/*aqui tira os ponto que fica antes dos itens*/
 .conteiner-carrossel{
     width: 500vw;
     display: flex;
+    flex-direction: column;
 }
 
+.nav-imagens{
+    display: flex;
+}
 .conteiner-carrossel input,.conteiner-carrossel .nav-auto {
     display: none;
 }
@@ -40,30 +42,26 @@ ul {/*aqui tira os ponto que fica antes dos itens*/
     height: 25em;
 }
 
-.nav-manual, .nav-auto{
-    position: absolute;
-    width: 100%;
-    margin-top: 32%;
+.nav-manual{
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
 }
 
-.nav-manual .manual-btn, .nav-auto div{
-    color: white;
+.nav-manual .manual-btn{
     padding: 10px;
     cursor: pointer;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    min-width: 10em;
 }
 .manual-btn{    
     color: #fff;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     text-decoration: none;
-    letter-spacing: 0.15s;
     display: inline-block;
-    padding: 4px 20px;
-    position: relative;
 
+    letter-spacing: 0.15s;
     background-image: linear-gradient(
         to bottom,
         transparent 0%,
@@ -81,14 +79,6 @@ ul {/*aqui tira os ponto que fica antes dos itens*/
     background-size: 100% 100%;
     background-position-x: left;
 }
-
-
-
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
-    margin-right: 10px;
-}
-
-
 
 #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4, #radio5:checked ~ .nav-auto .auto-btn5{
     background-color: #16B8CC;

@@ -3,10 +3,11 @@ let cont = 1
 
 document.getElementById ('radio1').checked = true/*aqui define o item como verdade,ou seja,sele vai ficar marcado */
 
-setInterval(() => {
-    proximaImg()
-}, 5000)/*aqui é para passar a imagem depois de um tempo.  */
+setInterval(proximaImg,5000)/*aqui é para passar a imagem depois de um tempo.  */
 
+// let proximaImg2=()=>{
+    
+// }
 function proximaImg(){
     cont++
 

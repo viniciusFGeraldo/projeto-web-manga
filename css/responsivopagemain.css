@@ -1,0 +1,152 @@
+@media (max-width: 995px){
+    .item-galeria{
+        width: 10em;
+    }
+}
+@media (max-width: 942px){
+    
+    .conteiner-externo{
+        flex-direction: column;
+    }
+    
+    .coluna-lateral{
+        width: 100vw;
+        flex-direction: row;
+        padding-left: 0;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .conteiner-mais-lidos, .conteiner-melhores-site,.conteiner-video{
+        width: 33.3vw;
+    }
+    .lista-mais-lidos{
+        font-size: 15px;
+    }
+    .conteiner-rodape img{
+        padding-top: 1vw;
+        height: 5vw;
+    }
+    .conteiner-rodape img:hover{
+        padding-top: 0vw;
+    }
+}
+
+@media (max-width: 742px){
+    .texto-cabecalho{
+        display: none;
+    }
+    .titulo-cabecalho{
+        margin-top: 0.8em;
+    }
+    
+    .imagem img{
+        height: 18em;
+    }
+    .coluna-lateral{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 560px){
+    header{
+        height: 2.5em;
+    }
+    .conteudo-cabecalho{
+        margin-top: -15px;
+    }
+    .logo{  
+        height: 2.5em;
+    }
+    .botao-cabecalho{
+        height: 3em;
+    }
+   
+   
+    .conteiner-galeria{
+        margin-top: 35px;
+    }
+    .item-galeria{
+        width: 8em;
+        height: 15em;
+        margin-bottom: 2.2em;
+    }
+    .item-galeria img{
+        width: 8em;
+        height: 15em;
+        border-radius: 2vh;
+    }
+    .titulo{
+        font-size: 10px;
+        text-align: center;
+    }
+    .coluna-lateral{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding-top: 0.5vw;
+    }
+    .conteiner-mais-lidos{
+        width: 100vw;
+    }
+    .numeracao{
+        font-size: 15px;
+    }
+    .conteiner-melhores-site{
+        width: 100vw;
+    }
+    .link-site{
+        width: 70vw;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+    }
+    .conteiner-video{
+        width: 100vw;
+        
+    }
+    .video{
+        width: 100vw;
+        height: 51vw;
+    } 
+    .icones{
+        display: flex;
+    }
+    .texto-rodape{
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 360px){
+    header{
+        height: 2.5em;
+    }
+    .conteudo-cabecalho{
+        display: none;
+    }
+    .logo{  
+        height: 2.5em;
+    }
+    .botao-cabecalho{
+        height: 3em;
+    }
+    .conteiner-galeria{
+        margin-top: 35px;
+    }
+    .item-galeria{
+        width: 5em;
+        height: 10em;
+        margin-bottom: 1.5em;
+    }
+    .item-galeria img{
+        width: 5em;
+        height: 10em;
+        border-radius: 2vh;
+    }
+    .titulo{
+        font-size: 7px;
+        text-align: center;
+    }
+    .conteiner-rodape button{
+        margin-right: 0.3em;
+    }
+    
+}

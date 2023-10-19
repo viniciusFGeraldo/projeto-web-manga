@@ -3,42 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recomendação de Manga</title>
+    <title>Inicio - Recomenda Manga</title>
     <link rel="stylesheet" href="./css/stylepagemain.css">
     <link rel="stylesheet" href="./css/stylecarrossel.css">
+    <link rel="stylesheet" href="./css/responsivopagemain.css">
 </head>
 <body>
     <main>
         <header><!--cabeçalho com navegação entre paginas-->
-            <a href="./index.html"><img class="logo" src="./assents/logo.png" alt="logo do site"></a>
-            <section class="conteudo-cabecalho">
-                <h1 class="titulo-cabecalho">Recomenda manga</h1>
-                <p class="texto-cabecalho">Fornecemos recomendação de mangas, a maneira mais fácil e simples de ficar sempre atualizado com os melhores mangas.</p>
-            </section>
-            <a href="./recomendacao.html" class="botao-cabecalho">Recomende aqui</a>
+            <nav>
+                <a href="./index.html" class="logo"><img class="logo" src="./assents/logo.png" alt="logo do site"></a>
+                <a href="./recomendacao.html" class="botao-cabecalho">Recomende aqui</a>
+            </nav>
         </header>
         <section class="carrossel">
             <div class="conteiner-carrossel"><!--https://www.youtube.com/watch?v=sk7mgXO-FeQ -->
-                <input type="radio" name="btn-radio" id="radio1">
-                <input type="radio" name="btn-radio" id="radio2">
-                <input type="radio" name="btn-radio" id="radio3">
-                <input type="radio" name="btn-radio" id="radio4">
-                <input type="radio" name="btn-radio" id="radio5">
-    
-                <div class="imagem" id="primeira"><img src="./assentsCarrossel/carrossel1.png" alt="carrossel1"></div>
-                <div class="imagem"><img src="./assentsCarrossel/carrossel2.jpg" alt="carrossel2" ></div>
-                <div class="imagem"><img src="./assentsCarrossel/carrossel3.jpg" alt="carrossel3" ></div>
-                <div class="imagem"><img src="./assentsCarrossel/carrossel4.jpg" alt="carrossel4" ></div>
-                <div class="imagem"><img src="./assentsCarrossel/carrossel5.jpg" alt="carrossel5" ></div>
-                
-                <div class="nav-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                    <div class="auto-btn5"></div>
+                <div class="nav-imagens">
+                    <input type="radio" name="btn-radio" id="radio1">
+                    <input type="radio" name="btn-radio" id="radio2">
+                    <input type="radio" name="btn-radio" id="radio3">
+                    <input type="radio" name="btn-radio" id="radio4">
+                    <input type="radio" name="btn-radio" id="radio5">
+
+                    <div class="imagem" id="primeira"><img src="./assentsCarrossel/carrossel1.png" alt="carrossel1"></div>
+                    <div class="imagem"><img src="./assentsCarrossel/carrossel2.jpg" alt="carrossel2" ></div>
+                    <div class="imagem"><img src="./assentsCarrossel/carrossel3.jpg" alt="carrossel3" ></div>
+                    <div class="imagem"><img src="./assentsCarrossel/carrossel4.jpg" alt="carrossel4" ></div>
+                    <div class="imagem"><img src="./assentsCarrossel/carrossel5.jpg" alt="carrossel5" ></div>
+
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                    </div>
                 </div>
-    
+
+
                 <div class="nav-manual">
                     <label for="radio1" class="manual-btn">Solo Leveling</label>
                     <label for="radio2" class="manual-btn">against the Gods</label>
@@ -49,12 +51,12 @@
     
             </div>
         </section>   
-       
+    <section class="conteiner-externo">   
         <article class="conteiner-galeria">
             
-            <a href="https://www.google.com.br/?hl=pt-BR" class="item-galeria"><img class="imagem-conteudo" src="./assents/onepiece1.webp" alt="one_piece"><h1 class="titulo">One Piece</h1></a>
-            <a href="" class="item-galeria"><img class="imagem-conteudo" src="./assents/sololeveling1.webp" alt="solo_leveling"><h1 class="titulo">Solo Leveling</h1></a>    
-            <a href="" class="item-galeria"><img class="imagem-conteudo" src="./assents/talesofdemons1.jpg" alt="tales_of_demons"><h1 class="titulo">Tales of Demons and Gods</h1></a>
+            <a href="./onepiece.html" class="item-galeria"><img class="imagem-conteudo" src="./assents/onepiece1.webp" alt="one_piece"><h1 class="titulo">One Piece</h1></a>
+            <a href="./sololeveling.html" class="item-galeria"><img class="imagem-conteudo" src="./assents/sololeveling1.webp" alt="solo_leveling"><h1 class="titulo">Solo Leveling</h1></a>    
+            <a href="./talesofdemons.html" class="item-galeria"><img class="imagem-conteudo" src="./assents/talesofdemons1.jpg" alt="tales_of_demons"><h1 class="titulo">Tales of Demons and Gods</h1></a>
             <a href="" class="item-galeria"><img class="imagem-conteudo" src="./assents/TheBeginning1.jpg" alt="the_beginning_after"><h1 class="titulo">The Beginning After the End</h1></a>
             <a href="" class="item-galeria"><img class="imagem-conteudo" src="./assents/SecondLife1.jpg" alt="second_life_ranker"><h1 class="titulo">Second Life Ranker</h1></a>    
             <a href="" class="item-galeria"><img class="imagem-conteudo" src="./assents/necromancer1.jpeg" alt="necromancer_king"><h1 class="titulo">Necromancer-King of the Scourge</h1></a>    
@@ -69,7 +71,7 @@
 
             <aside class="conteiner-mais-lidos">
                 <h4 class="titulo-lateral">Top 10 mais lidos:</h4>
-                <ol class="numeracao">
+                <ol class="lista-mais-lidos">
                     <li>One Piece</li>
                     <li>Solo Leveling</li>
                     <li>Tales of Demons and Gods</li>
@@ -85,7 +87,7 @@
             </aside>
             <aside class="conteiner-melhores-site">
                 <h4 class="titulo-lateral">Melhores sites:</h4>
-                <ul>
+                <ul class="lista-link-site">
                     <a href="https://mangalivre.net/" alt="site 1" class="link-site">Manga Livre</a>
                     <a href="https://leitor.net/" alt="site 1" class="link-site">Leitor.net</a>
                     <a href="https://mangaschan.net/" alt="site 1" class="link-site">Mangás Chan</a>
@@ -104,8 +106,9 @@
             </aside>
 
         </div>
+    </section>
         <footer class="conteiner-rodape">
-            <div>
+            <div class="icones">
                 <a href="https://discord.com/"><img src="./assents/discord.png" alt="imagem do discord"></a>
                 <a href="https://outlook.live.com/mail/about/index_pt.html"><img src="./assents/email.png" alt="imagem do email"></a>
             </div>
@@ -116,7 +119,7 @@
         </footer>
     </main>
 
-    <script src="carrossel.js"></script>
+    <script src="./carrossel.js"></script>
     
 </body>
 </html>
