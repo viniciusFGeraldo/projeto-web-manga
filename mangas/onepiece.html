@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece - Recomenda Manga</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Roboto&display=swap');
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        ul {list-style: none;}
+        body{background-color: #000;}
+        nav{height: 4em;display:flex;flex-direction: row;justify-content: space-between;}
+        .logo{height: 4em;margin-left: 1.5em;margin-right: 1.5em;}
+        .botao-cabecalho{white-space: nowrap;color: #0BA0B2;display: flex;align-items: center;justify-content: center;margin-right: 2em; text-align: center;font-family: 'Montserrat',sans-serif;font-size: 1.2em;border: none;text-decoration: none;}
+        .botao-cabecalho:hover{color: #16B8CC;font-size: 1.3em;cursor: pointer;}
+
+        #imagem-esquerda{width: 85%;margin: 3em;border-radius: 4vh;}
+        #tabela{border: 5px;border-color: #16B8CC;}
+        .meio-td{width: 50%;}
+        .terco-td1{width: 35%;}
+        #conteiner-informacao{display: grid;grid-template-columns: repeat(2,1fr);/*dividiu em 2 coluna*/ }
+        aside{padding: 0 25px;margin-top: 3em;}
+        h5{text-align: center;font-size: 3em;font-family:Arial, Helvetica, sans-serif;color: #16B8CC;padding: 5px;}
+        strong{color:#16B8CC;margin-left: 1em;font-size: 20px;}
+        p{color: #fff;padding: 10PX;}
+        iframe{border-radius: 2vh;}
+
+        .conteiner-rodape{height: 13vh;display: flex;justify-content: space-between;}
+        .conteiner-rodape img{height: 12vh;padding: 1vw;margin-left: 3vh;}
+        .conteiner-rodape img:hover{padding: 0vw;}
+        .conteiner-rodape button{background-color: #000;border: none;margin-right: 1.5em;width: 20vh;height: 8vh;padding-top: 10px;cursor:pointer;}
+        .conteiner-rodape button:hover{padding-top: 0px;}
+        .texto-rodape{color: #ffffff;text-align: center;margin-top: 3vh;}
+    </style>
+</head>
+<body>
+    <main>
+        <header><!--cabeçalho com navegação entre paginas-->
+            <nav>
+                <a href="../index.html" class="logo"><img class="logo" src="../assets/img/logo.png" alt="logo do site"></a>
+                <a href="../recomendacao.html" class="botao-cabecalho">Recomende aqui</a>
+            </nav>
+        </header>
+        <div id="conteiner-informacao">
+            <article>
+                <img src="../assets/img/mangas/onepiece2.webp" alt="imagem_one_piece" id="imagem-esquerda">
+            </article>
+            <aside>
+                <table id="tabela" border="5px">
+                    <tr>
+                        <td colspan="4"><h5>One Piece - Manga</h5></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><p><strong>sinopse:</strong> One Piece começa quando Gol D. Roger, o Rei Dos Piratas que possuiu tudo nesse mundo, antes de ser executado, diz que escondeu o seu tesouro em algum lugar da Grand Line, um oceano extremamente perigoso. Desde então muitos piratas se aventuram pela Grand Line para tentar encontrar o tesouro chamado One Piece. Um deles é Monkey D. Luffy, o garoto que, acidentalmente, comeu uma das Akuma No Mi, a Gomu Gomu No Mi (Fruta da Borracha), e agora ele pode esticar seu corpo como se fosse uma borracha. A jornada dele começa atrás de companheiros e um barco, que ele vai conseguindo pouco a pouco, pois tem um objetivo: Ser o Rei Dos Piratas!</p>                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><p><strong>Categorias:</strong> Ação, Aventura, Comédia, Drama, Fantasia, Shounen, Sobrenatural</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="terco-td1"><p><strong>Status:</strong> Em lançamento</p></td>
+                        <td colspan="1"><p><strong>Tipo:</strong> Mangá</p></td>
+                        <td colspan="1"><p><strong>Lançado em:</strong> 1997</p></td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="meio-td"><p><strong>Autor:</strong> Eiichiro Oda</p></td>
+                        <td colspan="2" class="meio-td"><p><strong>Artista:</strong> Eiichiro Oda</p></td>
+                    </tr>
+                </table>
+                <aside>
+                    <iframe width="100%" height="280" src="https://www.youtube.com/embed/Lrf5fxYcALc?si=BTgKXjB_66ItQgbD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </aside>
+            </aside>
+            
+        </div>
+        <footer class="conteiner-rodape">
+            <div class="icones">
+                <a href="https://discord.com/" target="_blank"><img src="../assets/img/discord.png" alt="imagem do discord"></a>
+                <a href="https://outlook.live.com/mail/about/index_pt.html" target="_blank"><img src="../assets/img/email.png" alt="imagem do email"></a>
+            </div>
+            <p class="texto-rodape" >Fornecemos recomendação de mangas,<br> a maneira mais fácil e simples de ficar sempre atualizado com os melhores mangas.</p>
+            <button onclick="topo()">
+                <img src="../assets/img/seta.png" alt="seta para cima">
+            </button>
+        </footer>
+    </main>
+
+    <script src="../assets/js/index.js"></script>
+</body>
+</html>

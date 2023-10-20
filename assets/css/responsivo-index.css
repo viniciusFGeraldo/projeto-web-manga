@@ -1,0 +1,116 @@
+
+@media (max-width: 995px){
+    .item-galeria{
+        width: 10em;
+    }
+}
+@media (max-width: 942px){
+    
+    .manual-btn{ 
+        font-size: 13px;
+    }
+    .conteiner-externo{
+        flex-direction: column;
+    }
+    .coluna-lateral{
+        width: 100vw;
+        flex-direction: row;
+        padding-left: 0;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .conteiner-mais-lidos, .conteiner-melhores-site,.conteiner-video{
+        width: 33.3vw;
+    }
+    .lista-mais-lidos{
+        font-size: 15px;
+    }
+    .conteiner-rodape img{
+        padding-top: 1vw;
+    }
+    .conteiner-rodape img:hover{
+        padding-top: 0vw;
+    }
+    .texto-rodape{
+        font-size: 12px;
+    }
+}
+@media (max-width: 806px){.texto-rodape{display: none;}}
+@media (max-width: 700px){
+    .imagem img{
+        height: 20em;
+    }
+    .coluna-lateral{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteiner-mais-lidos{
+        width: 100vw;
+    }
+    .lista-mais-lidos{
+        font-size: 25px;
+    }
+    .conteiner-melhores-site{
+        width: 100vw;
+    }
+    .li-link-site{
+        width: 70vw;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+    }
+    .conteiner-video{
+        width: 100vw;
+        
+    }
+    .video{
+        width: 100vw;
+        height: 51vw;
+    } 
+    .icones{
+        display: flex;
+    }
+}
+@media (max-width: 500px){
+    .logo{
+        margin: 4px 10px;
+        height: 3em;
+    }
+    .botao-cabecalho{
+        font-size: 15px;
+        margin: 0 10px;
+    }
+    .imagem img{
+        height: 15em;
+    }
+}
+@media (max-width: 360px){
+    .imagem img{
+        height: 12em;
+    }
+    .manual-btn{ 
+        font-size: 11px;
+    }
+    .item-galeria{
+        width: 7em;
+    }
+    .item-galeria img{
+        width: 7em;
+        border-radius: 1vh;
+    }
+    .titulo{
+        font-size: 12px;
+        text-align: center;
+    }
+    .lista-mais-lidos{
+        font-size: 15px;
+    }
+    .li-link-site{
+        
+        border: 0.5px solid white;
+        margin: 0.5px 0; 
+    }
+    .conteiner-rodape button{
+        margin-right: 0.3em;
+    }
+    
+}
