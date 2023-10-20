@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Roboto&display=swap');
 #imagem-esquerda{
     width: 85%;
-    margin: 3em
+    margin: 3em;
+    border-radius: 4vh;
 }
 
 #conteiner-informacao{
@@ -32,4 +33,7 @@ p{
     padding: 5PX 0;
 }
 
+iframe{
+    border-radius: 2vh;
+}
 
