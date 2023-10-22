@@ -1,7 +1,9 @@
 .frase-formulario{
+    background-color: #0f0e0e;
+    padding: 8px ;
     color: white;/*cor da letra*/
     text-align: center;/*centralizou o texto*/
-    margin: 40px 0 20px 0;/*defini espaçamento,a sequencia é top,direita,embaixo e esquerda*/
+    margin: 20px 15%;/*defini espaçamento,a sequencia é top,direita,embaixo e esquerda*/
 }
 
 label,.checkbox{
@@ -20,7 +22,7 @@ label,.checkbox{
 input,textarea{
     padding: 15px;/*tamanho da caixa*/
     margin: 20px 0 5px 20px;/*defini espaçamento,a sequencia é top,direita,embaixo e esquerda*/
-    background-color: transparent;/*fundo transparente*/
+    background-color: #000;/*fundo transparente*/
     border: 2px solid #16B8CC;/*definiu a borda*/
     border-radius: 5px;/*deixa o canto aredondado*/
     width: 90%;/*a langura ficou grande por causa do display:grid*/
@@ -29,6 +31,7 @@ input,textarea{
     transition: all 5s ease;/*efeito horizontal quando carrega a pagina */ 
 }
 .conteiner-interno{
+    background-color: #0f0e0e;
     display: grid;
     grid-template-columns: repeat(2,1fr);/*dividiu em 2 coluna*/ 
 }
@@ -47,3 +50,16 @@ input,textarea{
 .enviar:hover,.limpar:hover{
     color: #16B8CC;/*muda cor da letra quando cursor esta encima*/
 }
+
+@media (max-width: 600px){
+    .frase-formulario{
+        margin: 10px 5%;
+        font-size: 12px;
+    }
+    
+    .conteiner-interno{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    }

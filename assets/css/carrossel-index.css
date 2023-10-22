@@ -51,6 +51,7 @@ ul {/*aqui tira os ponto que fica antes dos itens*/
 }
 
 .nav-manual .manual-btn{
+    background-color: #090909;
     padding: 8px;
     cursor: pointer;
     min-width: 10em;
